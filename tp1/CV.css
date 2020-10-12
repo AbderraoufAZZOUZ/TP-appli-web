@@ -6,8 +6,10 @@
 
 }
 
-body {
-    background-color: lightblue;
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
 table{
@@ -20,7 +22,7 @@ table{
     text-align: center
 
   }
-  
+
 h1{
 
 text-transform: uppercase;
