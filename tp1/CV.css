@@ -12,9 +12,14 @@
     }
 }
 
+/* make image bigger mouseover */
+div.c {
+    transform: scaleY(1.5);
+  }
+
  /* padding espace linge */
 th, td {
-    padding: 3px 3px 3px 10px;
+    padding: 2px 2px 2px 10px;
     text-align: left;
   }
 
