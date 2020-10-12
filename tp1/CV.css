@@ -8,14 +8,27 @@
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        background-color: grey;
     }
 }
 
-table{
+table {
+    border-spacing: 5px;
+  }
 
-    width :100%
+a:hover {
+    color:orange;
+    text-decoration:none;
+    }
 
+tr:hover {
+    background-color: red;
+}
+
+tr:nth-child(odd) {background: #FFF}
+
+table.color_line tr:nth-child(2n+0) td {
+    color: green; 
 }
 
   #Titre{
