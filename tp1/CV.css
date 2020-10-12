@@ -1,7 +1,29 @@
-table {
+#titre_page{
+    color: rgb(4, 80, 73);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 
 }
 
-tb {
+body {
+    background-color: lightblue;
+}
+
+table{
+
+    width :100%
+
+}
+
+  #Titre{
+    text-align: center
+
+  }
+  
+h1{
+
+text-transform: uppercase;
+
 
 }
