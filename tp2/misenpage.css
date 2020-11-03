@@ -1,0 +1,16 @@
+label{
+    width: 150px;
+    display: inline-block;
+}
+
+#error {
+    background-color: pink;
+    padding: 5px;
+    border: black 1px;
+}
+
+#resultat {
+    background: green;
+    padding: 5px;
+    color: white;
+}

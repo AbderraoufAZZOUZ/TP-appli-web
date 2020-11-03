@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
+        <title>TP2 AZZOUZ Abderraouf</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,14 +20,59 @@
           }
         </style>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+         <link rel="stylesheet" href="./misenpage.css" />
+         <script src="./prog.js"></script>
+
     </head>
     <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <h1>TP2 AZZOUZ Abderraouf</h1>
+
+        <!-- mes modification -->
+        
+        <!-- Class de saisie -->
+        <form id="formAW" onsubmit="validation()">
+
+            <!-- Nom -->
+            <label for="nom"> Nom </label>
+            <input type="text" id="nom" name="nom" placeholder="ex: CHARLE" minlength=5 maxlength=20 class="inputAW" >
+            <br><br>
+
+            <!-- Prénom -->
+            <label for="prenom"> Prénom </label>
+            <input type="prenom" id="prenom" name="prenom" placeholder="ex: Marie" minlength=5 maxlength=20 class="inputAW" >
+            <br><br>
+            
+
+            <!-- Date de naissance -->
+            <label for="date"> Date de naissance </label>
+            <input type="date" id="date" name="date" placeholder="JJ/MM/AAAA" class="inputAW" >
+            <br><br>
+
+            <!-- Adresse -->
+            <label for="adresse"> Adresse </label>
+            <input type="adresse" id="adresse" name="adresse" minlength=5 maxlength=50 class="inputAW" >
+            <br><br>
+
+            <!-- Mail -->
+            <label for="mail"> Mail </label>
+            <input type="mail" id="mail" name="mail" placeholder="ex: CHARLE.Marie@mail.fr" minlength=5 maxlength=30 class="inputAW" >
+            <br><br>
+            
+            <p>
+                <input type="button" value="Valider" onclick="validation()"/>
+            </p>
+            <br>
+              
+              
+        </form>
+            
+            <!-- msg d'erreur -->
+            <div id="error"></div>
+            <!-- msg de validation -->
+            <div id="resultat"></div>
+
+            
+        <!-- mes modification -->
     </body>
 </html>
