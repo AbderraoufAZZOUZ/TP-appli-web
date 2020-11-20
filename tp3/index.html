@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
+
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
+        <title>TP3 Formulaire AW</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,16 +20,103 @@
               margin: 0 auto;
               max-width: 800px;              
           }
+
+          .modal-body img {
+            max-width: 100%;
+            }
+          .link {
+            text-decoration: none;
+            color: rgb(139, 61, 25);
+            }
         </style>
+
+        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+        
+        <script src="./js/jquery-3.2.1.slim.min.js"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css ">
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/form-jquery-validation.js"></script>
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+
+
+
+
+
+
+<!-- Body -->
+
+
+    <body>
+      <!-- Add your site or application content here -->
+
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <h1> TP3 Formulaire v2 </h1>
+            <p> Avec Bootstrap & jQuery </p>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nom"> Nom (Obligatoire) </label>
+              <input type="text" class="form-control" id="nom" placeholder="ex: CHARLE">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="prenom"> Prénom (Obligatoire) </label>
+              <input type="text" class="form-control" id="prenom" placeholder="ex: Marie">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="date"> Date de naissance (Obligatoire) </label>
+              <input type="date" class="form-control" id="date" placeholder="JJ/MM/AAAA">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="adresse"> Adresse (Obligatoire) </label>
+            <input type="text" class="form-control" id="adresse">
+          </div>
+
+          <div class="form-group">
+            <label for="email"> e-mail (Obligatoire) </label>
+            <input type="text" class="form-control" id="email">
+          </div>
+
+
+          <button type="button" class="btn btn-primary" id="button"> Valider </button>
+        
+        </form>
+      </div>
+
+      <!-- Popup -->
+
+
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"> Résultats </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Corps de la modal à modifier après validation du formulaire</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary"> Sauvgarder les Changements </button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fermer </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </body>
 </html>
